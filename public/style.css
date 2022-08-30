@@ -1,46 +1,84 @@
-/****** Main Styling ******/
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	color: #222;
-	background-color: #FaFaFa;
-	text-align: center;
-	line-height: 1.4em;
-}
-
-.container {
-	padding: 0;
-	margin-top: 40px;
-}
-
-h3 {
-  margin-top: 30px;
-}
-
-hr {
-	margin: 25px;
-}
-
-.footer {
-	margin-top: 40px;
-}
-
-code {
-  font-family: monospace;
-  padding: 2px;
-  color: black;
-  background-color: #fff;
+	background-color: #fafafa;
+	line-height: 1.4rem;
+	height: 100vh;
 }
 
 ul {
-	list-style-type: none;
-}
-
-li {
-  margin-bottom: 0.5em;
+	list-style: none;
 }
 
 a {
-	color: #2574A9;
+	text-decoration: underline;
+	color: inherit;
+}
+
+a,
+p,
+code {
+	font-size: 1.05rem;
+}
+
+header {
+	padding: 1rem 0;
+	background-color: #fafafa;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+header > h1 {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: normal;
+	margin-bottom: 1rem;
+}
+
+.example {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	padding: 2rem;
+}
+
+table {
+	border-collapse: collapse;
+	border-bottom: 2px solid black;
+}
+
+tr+tr{
+	border-top: 2px solid black;
+}
+
+td {
+	padding: 0.5rem 1rem;
+}
+
+td:first-child {
+	font-weight: bold;
+	border-right: 2px solid black;
+}
+
+.footer {
+	position: fixed;
+	inset: auto 0 0 0;
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 0;
+	text-align: center;
+	background-color: #3c3a3a;
+	color: #fff;
 }
